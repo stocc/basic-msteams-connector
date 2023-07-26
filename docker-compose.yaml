@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  resolution: 
+    build: .
+    ports:
+      - "8080:8080"
+    environment: 
+      - "TZ=Europe/Berlin"
+      - FLASK_ENV=development
+      - MSTEAMS_URL=https://ivutraffic.office.com/webhook/...
